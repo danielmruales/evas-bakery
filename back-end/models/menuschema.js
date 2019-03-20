@@ -1,5 +1,5 @@
-import mongoose from 'mongoose'
-const Schema = mogoose.Schema
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
 
 const menuSchema = new Schema({
     title:String,
