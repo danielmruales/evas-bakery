@@ -3,8 +3,7 @@ import Form from "./Form"
 class Catering extends Component {
     render() {
         return (
-            <div>
-                 <>
+            <div id='catering'>
             <div>
             <h1>Let us do the work.</h1>
             <p>From 10 plates to 1,000, we've got you covered,with delicious food that will impress.
@@ -14,7 +13,7 @@ class Catering extends Component {
             <div>
                 <Form />
             </div>
-            </>
+            
             </div>
         )
     }
