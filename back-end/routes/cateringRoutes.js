@@ -1,5 +1,5 @@
 const express = require('express')
-const cateringRoute = express.Route()
+const cateringRoute = express.Router()
 
 const Customer = require('../models/cateringSchema')
 
@@ -26,8 +26,10 @@ cateringRoute.route('/')
             })
     })
 
+cateringRoute.route('/:_id')
+
     .get((req, res) => {
-        Customer.findById({_id: req.params._id}, (err, customer) => {
+        Customer.findById(req.params._id, (err, customer) => {
             
             if(err) return res.status(500).send(err)
                 return res.status(200).send(customer)
