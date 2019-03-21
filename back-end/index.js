@@ -4,7 +4,8 @@ const mongoose = require('mongoose')
 const port = process.env.port || 3003
 
 App.use(express.json())
-App.use('/bakery', require('./routes/menuroutes'))
+App.use('/menu', require('./routes/menuroutes'))
+App.use('/catering', require('./routes/cateringRoutes'))
 
 mongoose.connect('mongodb://localhost:27017/bakery', {useNewUrlParser: true})
     .then(console.log('Connected'))
