@@ -7,10 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-<<<<<<< HEAD
-=======
   "keywords": [],
->>>>>>> 01acd01c131d49837b70cb9cd02c0132777be02c
   "author": "",
   "license": "ISC",
   "dependencies": {
