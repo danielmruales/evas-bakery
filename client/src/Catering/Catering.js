@@ -15,7 +15,7 @@ class Catering extends Component {
                 </div>
             
             </div>
-        );
+        )
     }
 }
 
