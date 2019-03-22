@@ -18,15 +18,16 @@ const caterSchema = new Schema({
         type: Number,
         require: true
     },
-    orderItems: {
+    desiredMenu: {
         type: String,
         require: true 
     },
-    questions: {
-        type: String,
-        require: true
+    questions:String,
+    dayOfEvent:{
+        type:Date,
+        required:true
     },
-    dateOfCatering:{
+    timeOfPickup:{
         type: Number,
         require: true
     }
