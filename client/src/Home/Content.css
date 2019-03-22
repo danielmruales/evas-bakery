@@ -1,0 +1,23 @@
+.content{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    
+}
+.ownerpic>img{
+    width:100%;
+    height:400px
+
+}
+
+.about{
+    background-color: aliceblue;
+}
+
+.about>h1{
+    margin: 5vh 0vh 0vh 20vh;
+}
+
+.about>p{
+    margin: 3vh 0vh 0vh 10vh;
+    justify-content: center
+}

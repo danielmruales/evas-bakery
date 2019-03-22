@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 import Form from "./Form"
+import "./Catering.css"
 class Catering extends Component {
     render() {
         return (
-            <div>
-                 <>
-            <div>
-            <h1>Let us do the work.</h1>
-            <p>From 10 plates to 1,000, we've got you covered,with delicious food that will impress.
-                Work brunches, corporate parties, wedding and more can all be handled beautifully by our catering team.
-            </p>
-            </div>
-            <div>
-                <Form />
-            </div>
-            </>
+            <div className='formContainer'>
+            
+                <div className="description">
+                    <h1>Let us do the work.</h1>
+                </div>
+
+                <div className="form">
+                    <Form />
+                </div>
+            
             </div>
         );
     }
