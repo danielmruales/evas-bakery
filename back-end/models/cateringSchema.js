@@ -28,7 +28,7 @@ const caterSchema = new Schema({
         required:true
     },
     timeOfPickup:{
-        type: Number,
+        type: String,
         require: true
     }
 })
