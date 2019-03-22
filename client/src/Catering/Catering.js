@@ -6,7 +6,7 @@ class Catering extends Component {
         return (
             <div className='formContainer'>
             
-                <div className="description">
+                <div className="title">
                     <h1>Let us do the work.</h1>
                 </div>
 

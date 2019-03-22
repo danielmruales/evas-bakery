@@ -52,10 +52,11 @@ class Form extends Component {
                  </select>
                <br></br>
 
-               <input placeholder="How Many People At Your Event"
+               <input placeholder="Number Of People (25-500)"
                       name=""
                       type="number"
-                      min="10"
+                      min="25"
+                      max="500"
                       required></input> 
                <br></br>
                <textarea placeholder="Desired Menu"

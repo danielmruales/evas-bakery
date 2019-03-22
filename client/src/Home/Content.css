@@ -9,15 +9,24 @@
 
 }
 
-.about{
-    background-color: aliceblue;
-}
 
 .about>h1{
-    margin: 5vh 0vh 0vh 20vh;
+    margin: 5vh 15vh 0vh 15vh;
 }
 
 .about>p{
-    margin: 3vh 0vh 0vh 10vh;
-    justify-content: center
+    margin: 3vh 10vh 0vh 10vh;
+    text-align: justify
+}
+
+@media (max-width:1035px){
+    .content{
+        display: block;
+    }
+    .about{
+        margin-bottom: 5vh 
+     }
+     .about>h1{
+        margin: 5vh 10vh 0vh 10vh;
+    }
 }

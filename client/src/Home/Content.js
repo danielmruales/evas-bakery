@@ -13,12 +13,12 @@ class Content extends Component {
                     <p>
                     Eva Coombs was renowned for cooking with an abundance of both love and butter. 
                     Family and friends took any opportunity to stop by her home for nourishment and 
-                    pleasure. Her great grandson, Charlie, was always by her side in the kitchen, 
-                    and Eva's passion for French cooking and respect for ingredients transferred to 
-                    her young apprentice. 
+                    pleasure.  
                     </p>
 
-                    <p>Chef /Owner, Charlie Perry, opened Eva, the restaurant, 
+                    <p>Her great grandson, Charlie, was always by her side in the kitchen, 
+                    and Eva's passion for French cooking and respect for ingredients transferred to 
+                    her young apprentice.Chef /Owner, Charlie Perry, opened Eva, the restaurant, 
                     and Eva's Bakery Boulangerie in her honor.</p>
                 </div>
             </div>

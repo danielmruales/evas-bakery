@@ -1,14 +1,12 @@
-.formContainer{
-    color:white;
-    display: grid;
-    /* grid-template-columns: repeat(2, minmax(200px, 1fr)); */
-    /* grid-gap: 20vw */
-    
+
+.title{
+   text-align: center;
+   
 }
-/* .description{
-    margin: 10vh 10vh 10vh 10vh;
-} */
 
 .form{
-    margin: 10vh 10vh 10vh 10vh
+    text-align: center;
+    margin-bottom: 20px
+   
+
 }
