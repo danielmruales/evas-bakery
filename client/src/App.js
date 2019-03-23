@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import {Switch, Route} from 'react-router-dom'
-import Navbar from './Navbar/Navbar'
-import Home from './Home/Home'
 import Admin from './Admin/Admin'
-// import Menu from './Menu/Menu'
-import Catering from './Catering/Catering'
-// import About from './About/About'
+import SubApp from './SubApp/SubApp'
 import './App.css';
 
 class App extends Component {
@@ -13,11 +9,9 @@ class App extends Component {
     return (
       <div>
         <Switch>
-          <Route exact path='/admin' component={Admin}/>
-          </Switch>
-          <Navbar/>
-          <Home/>
-          <Catering/>
+          <Route path='/home' component={SubApp}/>
+          <Route path='/admin' component={Admin}/>
+        </Switch>
       </div>
     );
   }
