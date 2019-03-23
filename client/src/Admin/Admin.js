@@ -1,10 +1,10 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import Navbar from './Navbar'
 
 const Admin = ()=>{
     return(
         <div>
-            <Link to='/home'>Home</Link>
+            <Navbar/>
         </div>
     )
 }

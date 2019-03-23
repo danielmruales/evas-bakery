@@ -3,7 +3,7 @@ import "./Content.css"
 class Content extends Component {
     render() {
         return (
-            <div className ="content">
+            <div className ="content" id='about'>
                 <div className="ownerpic">
                     <img src="https://cityhomecollective.blob.core.windows.net/uploads/cms/blog/Restaurants%20and%20Cocktails/Eva%27s%20Boulangerie/evas-boulangerie-20.jpg" alt=""></img>
                 </div>
