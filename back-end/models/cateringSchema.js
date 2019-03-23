@@ -11,16 +11,12 @@ const caterSchema = new Schema({
         required: true
     },
     phoneNum: {
-        type: Number,
+        type: String,
         require: true
     },
     numOfAttend: {
-        type: Number,
-        require: true
-    },
-    desiredMenu: {
         type: String,
-        require: true 
+        require: true
     },
     questions:String,
     dayOfEvent:{
@@ -28,9 +24,16 @@ const caterSchema = new Schema({
         required:true
     },
     timeOfPickup:{
-        type: Number,
+        type: String,
         require: true
     }
+    ,
+     desiredMenu:{
+         type: String,
+         require: true
+
+     }
+    
 })
 
 module.exports = mongoose.model('Catering', caterSchema)

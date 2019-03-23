@@ -1,5 +1,12 @@
-.homeImage {
+.logo{
     width: 100%;
     height: auto;
     margin-top: 100pt
+}
+
+@media (max-width:800px){
+    .logo{
+        width: 100%;
+        height: auto ;
+    }
 }

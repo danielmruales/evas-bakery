@@ -19,7 +19,7 @@ cateringRoute.route('/')
         const newCustomer = new Customer(req.body)   
         newCustomer.save(err => {
 
-            if(err) return res.status(500).send(err)
+            if(err) return res.status(501).send(err)
             return res.status(200).send(newCustomer)
         })
     })

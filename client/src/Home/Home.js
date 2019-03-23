@@ -1,14 +1,21 @@
-import React from 'react';
-import './Home.css'
+import React, { Component } from 'react';
+import SubBar1 from "./SubBar1"
+import SubBar2 from "./SubBar2"
+import Content from "./Content"
+import "./Home.css"
 
-const Home = () => {
-    return (
-        <div id="home">
+class Home extends Component {
+    render() {
+        return (
+            <div>
+                <img src="http://evasbakeryslc.com/images/slide1.jpg" className="logo" alt=""/>
+                <SubBar1 />
+                <Content />
+                <SubBar2 />
 
-            <img src='http://www.evasbakeryslc.com/images/slide1.jpg' alt='home page' className='homeImage'/>
-        
-        </div>
-    );
-};
+            </div>
+        );
+    }
+}
 
 export default Home;

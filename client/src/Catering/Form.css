@@ -1,3 +1,56 @@
 input{
-    width: 70%;
+    width: 80%;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: darkgoldenrod; 
+    border: 2px solid goldenrod;
+    background: white;
+    font-size:15px ;
+    border-radius:10px;
+   
+}
+textarea{
+    width: 80%;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    background: white;
+    border: 2px solid goldenrod;
+    font-size:15px;border-radius:10px 
+    
+}
+
+form{
+
+    border: 2px transparent white;
+    border-radius:15px;
+    background-color: #85b2e4;
+    width: 50%;
+    margin: auto;
+
+}
+
+select{
+    width: 83.5%;
+    padding: 10px;
+    height: 40px;
+    margin: 10px;
+    zoom: 1.2;
+    background: white;
+    border: 2px solid goldenrod;
+    border-radius:50%;
+
+}
+
+button{
+    width:80px;
+    height:40px;
+    box-shadow: darkgoldenrod; 
+    border: 2px solid goldenrod;
+    background: white;
+    border-radius:10px;
+    font-size:15px;
+    margin-bottom: 10px 
+
+    
+    
 }
