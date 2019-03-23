@@ -1,0 +1,11 @@
+.containerSubBar2{
+    color: white;
+    background-color:#7aa9e0;
+    display: flex
+}
+.containerSubBar2 > div {
+    padding: 15px;
+    text-align: center;
+    font-size: 2em;
+    flex:1
+  }

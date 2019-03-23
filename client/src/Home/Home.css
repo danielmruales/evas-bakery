@@ -1,4 +1,11 @@
-.homeImage {
-    width: 100vw;
-    height: auto
+.logo{
+    width: 100%;
+    height: 600px ;
+}
+
+@media (max-width:800px){
+    .logo{
+        width: 100%;
+        height: 400px ;
+    }
 }
