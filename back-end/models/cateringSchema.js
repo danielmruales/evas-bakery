@@ -18,15 +18,11 @@ const caterSchema = new Schema({
         type: String,
         require: true
     },
-    questions: {
-        type: String,
-        require: true
-    },
+    questions:String,
     dayOfEvent:{
-        type: String,
-        require: true
+        type:Date,
+        required:true
     },
-
     timeOfPickup:{
         type: String,
         require: true
