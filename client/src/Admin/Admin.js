@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 const Admin = ()=>{
     return(
         <div>
-            <Link to='/home'>Home</Link>
+            <Link to='/'>Home</Link>
         </div>
     )
 }
