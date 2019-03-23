@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-import Navbar from './Navbar/Navbar'
-import Home from './Home/Home'
-import Catering from './Catering/Catering'
+import {Switch, Route} from 'react-router-dom'
+import Admin from './Admin/Admin'
+import SubApp from './SubApp/SubApp'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
-        <Home/>
-        <Catering/>
+        <Switch>
+          <Route path='/home' component={SubApp}/>
+          <Route path='/admin' component={Admin}/>
+        </Switch>
       </div>
     );
   }

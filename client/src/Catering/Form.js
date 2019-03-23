@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./Form.css"
-import {withCatering} from "./../CateringProvider"
+import {withGlobalData} from "./../GlobalData"
 class Form extends Component {
        constructor(){
               super()
@@ -120,4 +120,4 @@ class Form extends Component {
     }
 }
 
-export default withCatering(Form);
+export default withGlobalData(Form);

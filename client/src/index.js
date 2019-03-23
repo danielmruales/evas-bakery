@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter} from 'react-router-dom'
 import App from './App';
-import CateringProvider from "./CateringProvider"
+import GlobalData from "./GlobalData"
 
 
-ReactDOM.render(<CateringProvider>
+ReactDOM.render(<GlobalData>
                  <BrowserRouter>
                     <App />
                 </BrowserRouter>   
-                </CateringProvider> ,document.getElementById('root'));
+                </GlobalData> ,document.getElementById('root'));
 
 
