@@ -9,8 +9,8 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8"
   },
-   "proxy":"http://localhost:3003",
-   "scripts": {
+  "proxy": "http://localhost:3003",
+  "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
