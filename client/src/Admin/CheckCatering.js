@@ -14,28 +14,34 @@ class Catering extends Component{
             this.setState({cateringRequests:res.data})
         }))
     }
-
+    delete = (e)=>{
+        // e.preventDefault()
+        // e.target.
+    }
     
     render(){
         const Display = this.state.cateringRequests.map(item=>{
-            return (
-            <div key={item._id}>
-                <p>{item.fullName}</p>
-                <p>{item.email}</p>
-                <p>{item.dateOfCatering}</p>
-                <p>{item.numOfAttend}</p>
-                <p>{item.orderItems}</p>
-                <p>{item.phoneNum}</p>
-                {/* {()=>{
-                    if(item.questions){
-                        return(<p>{item.questions}</p>)
-                    }
-                }} */}
-            </div>)
+            if(item.questions){
+                return (
+                    <div key={item._id} className="cater" onSubmit={this.delete}>
+                        <h1> Caterig Request:</h1>
+                        <p>Name: {item.fullName}</p>
+                        <p>Email: {item.email}</p>
+                        <p>Day of pickup: {item.dayOfEvent}</p>
+                        <p>Time of pickup: {item.timeOfPickup}</p>
+                        <p>Number of people: {item.numOfAttend}</p>
+                        <p>Desired menu: {item.desiredMenu}</p>
+                        <p>Phone Number: {item.phoneNum}</p>
+                        <p>Questions: {item.questions}</p>
+                        <form action="" name={item._id}>
+                            <button>delete</button>
+                        </form>
+                    </div>)
+            }
         })
         console.log(this.state.cateringRequests)
         return(
-            <div>
+            <div style={{display:'flex',justifyContent:"space-around"}}>
                 {Display}
             </div>
         )
