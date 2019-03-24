@@ -1,12 +1,12 @@
 
-.title{
-   text-align: center;
-   
+#catering{
+    background-color: #85b2e4;
+    color: white;
+    justify-content: center;
+    display: flex;
 }
 
 .form{
     text-align: center;
     margin-bottom: 20px
-   
-
 }

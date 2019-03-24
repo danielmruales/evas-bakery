@@ -6,7 +6,8 @@ class GlobalData extends Component {
     constructor(){
         super()
         this.state = {
-            caterings: [{key: 'hello'}]
+            caterings: [{key: 'hello'}],
+            menuItems: []
         }
     }
     postCatering = (newCatering) =>{
@@ -16,10 +17,22 @@ class GlobalData extends Component {
             }))
         })
     }
+
+
+    getMenu = () => {
+        axios.get('/menu').then(res => {
+            this.setState({menuItems: res.data})
+            console.log(res.data)
+        })
+    }
+    
     render() {
         return (
-            <Provider value={{postCatering: this.postCatering,
-                        ...this.state}}>
+            <Provider value={{
+                        postCatering: this.postCatering,
+                        getMenu: this.getMenu,
+                        ...this.state
+                        }}>
                 {this.props.children}
             </Provider>
         );

@@ -41,7 +41,7 @@ class Catering extends Component{
         })
         console.log(this.state.cateringRequests)
         return(
-            <div style={{display:'flex',justifyContent:"space-around"}}>
+            <div style={{display:'grid', gridTemplateColumns:"repeat(auto-fill, minmax(300pt, 1fr))"}}>
                 {Display}
             </div>
         )

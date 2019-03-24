@@ -4,12 +4,13 @@
 }
 .cater{
     background: #7aa9e0;
-    border-radius: 10pt
+    border-radius: 10pt;
+    width:300pt
 }
 .cater p{
     text-align: center;
     border: solid 2px black;
     background:white;
     border-radius: 5pt;
-    margin:5pt
+    margin:5pt;
 }
