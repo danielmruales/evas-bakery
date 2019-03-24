@@ -1,10 +1,15 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import Navbar from './Navbar'
+import Catering from './CheckCatering'
+import Menus from './EditMenus'
+import './Admin.css'
 
 const Admin = ()=>{
     return(
         <div>
-            <Link to='/'>Home</Link>
+            <Navbar/>
+            <Catering/>
+            <Menus/>
         </div>
     )
 }

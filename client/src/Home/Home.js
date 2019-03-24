@@ -7,7 +7,7 @@ import "./Home.css"
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div id="home">
                 <img src="http://evasbakeryslc.com/images/slide1.jpg" className="logo" alt=""/>
                 <SubBar1 />
                 <Content />
