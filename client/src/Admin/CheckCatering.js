@@ -15,8 +15,7 @@ class Catering extends Component{
         }))
     }
     delete = (e)=>{
-        // e.preventDefault()
-        // e.target.
+        Axios.delete(`/catering/${e.target.name}`)
     }
     
     render(){
