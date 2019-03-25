@@ -6,8 +6,9 @@
     width: 100%
   }
   
-  img {
+  #logo {
     height: 120px;
+    /* border-radius:  */
   }
   
   .navItems {

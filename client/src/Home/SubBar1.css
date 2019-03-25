@@ -1,21 +1,21 @@
-.containerSubBar1{
+#containerSubBar1{
     color: white;
     background-color:#7aa9e0;
     display: flex
 }
 
-.containerSubBar1 > div {
+#containerSubBar1 > div {
     padding: 15px;
     text-align: center;
     font-size: 1.4em;
     border-left: 1px solid white;
     flex:1
   }
-  .containerSubBar1 > div:nth-child(1){
+  #containerSubBar1 > div:nth-child(1){
     border-left:none
   }
   @media (max-width:800px){
-    .containerSubBar1 > div{
+    #containerSubBar1 > div{
       font-size: 1.1em
     }
   }

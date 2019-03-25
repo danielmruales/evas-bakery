@@ -4,7 +4,7 @@ import "./SubBar2.css"
 class SubBar2 extends Component {
     render() {
         return (
-            <div className="containerSubBar2">
+            <div id="containerSubBar2">
                 <div>Explore Our Menu</div>
             </div>
         );

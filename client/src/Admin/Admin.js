@@ -1,15 +1,15 @@
 import React from 'react'
 import Navbar from './Navbar'
-import Catering from './CheckCatering'
-import Menus from './EditMenus'
 import './Admin.css'
 
 const Admin = ()=>{
     return(
         <div>
             <Navbar/>
-            <Catering/>
-            <Menus/>
+            <h1 className='intro'> Welcome to the Admin page, select an option above to begin.</h1>
+            <div className='meme'>
+                <img src='https://i.imgflip.com/21acb2.jpg' alt='admin meme'/>
+            </div>
         </div>
     )
 }

@@ -1,7 +1,34 @@
-.nav{
-    display: flex;
-    justify-content: space-around;
+.adminLogo{
+    height: 120px;
 }
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;  
+}
+
+.meme {
+   display: flex;
+   justify-content: center;
+}
+
+.adminNav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: grey;
+}
+
+.adminNavItems{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-top: 40px;
+}
+
 .cater{
     background: #7aa9e0;
     border-radius: 10pt;
@@ -9,8 +36,46 @@
 }
 .cater p{
     text-align: center;
-    border: solid 2px black;
+    border: solid 1px black;
     background:white;
     border-radius: 5pt;
-    margin:5pt;
+    margin: 10pt;
+}
+
+.titleCatering{
+    text-align: center;
+    
+}
+
+.delteBtn {
+  display: flex;
+  justify-content: center;
+  background-color: #7aa9e0;
+}
+
+.cateringNav {
+    display: grid;
+    grid-template-columns:  repeat(auto-fill, minmax(300pt, 1fr));
+    margin-top: 50px;
+}
+
+.adminMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.adminItems {
+    background-color: #7aa9e0;
+    border-radius: 20px;
+    margin: 15px;
+    color: white;
+}
+
+.titleMenu{
+    text-align: center;
+}
+
+.adminMenuBtn{
+    background-color: #7aa9e0;
 }

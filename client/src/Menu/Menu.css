@@ -2,9 +2,10 @@
 .items{
     background-color: #85b2e4;
     color: white;
-    width: 60vw;
+    width: 45vw;
     margin: auto;
-    /* border-radius: 20px; */
+    border-radius: 40px;
+    margin-bottom: 20px;
     
 }
 
@@ -57,4 +58,22 @@
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 40px;
+}
+
+.lunchItems {
+    background-color: #85b2e4;
+    color: white;
+    width: 45vw;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 40px;
+}
+
+.saladItems {
+    background-color: #85b2e4;
+    color: white;
+    width: 45vw;
+    margin: auto;
+    border-radius: 40px;
+    margin-bottom: 20px;
 }

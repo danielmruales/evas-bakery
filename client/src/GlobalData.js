@@ -7,7 +7,9 @@ class GlobalData extends Component {
         super()
         this.state = {
             caterings: [{key: 'hello'}],
-            menuItems: []
+            breakfastMenuItems: [],
+            lunchMenuItems: [],
+            saladMenuItems: []
         }
     }
     postCatering = (newCatering) =>{
@@ -18,10 +20,24 @@ class GlobalData extends Component {
         })
     }
 
+  
 
-    getMenu = () => {
-        axios.get('/menu').then(res => {
-            this.setState({menuItems: res.data})
+    getBreakfastMenu = () => {
+        axios.get('/breakfastmenu').then(res => {
+            this.setState({breakfastMenuItems: res.data})
+            console.log(res.data)
+        })
+    }
+
+    getLunchMenu = () => {
+        axios.get('/lunchmenu').then(res => {
+            this.setState({lunchMenuItems: res.data})
+            console.log(res.data)
+        })
+    }
+    getSaladMenu = () => {
+        axios.get('/saladmenu').then(res => {
+            this.setState({saladMenuItems: res.data})
             console.log(res.data)
         })
     }
@@ -30,7 +46,9 @@ class GlobalData extends Component {
         return (
             <Provider value={{
                         postCatering: this.postCatering,
-                        getMenu: this.getMenu,
+                        getBreakfastMenu: this.getBreakfastMenu,
+                        getLunchMenu: this.getLunchMenu,
+                        getSaladMenu: this.getSaladMenu,
                         ...this.state
                         }}>
                 {this.props.children}
