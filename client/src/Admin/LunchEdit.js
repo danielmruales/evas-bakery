@@ -9,7 +9,7 @@ class LunchEdit extends Component {
         this.state = {
            title:"",
            description:"",
-           price:"" 
+           cost:"" 
         }
     }
 
@@ -34,6 +34,7 @@ class LunchEdit extends Component {
                 <div className='adminItems'>
                     <h1>{lunchMenuItem.title}</h1>
                     <h2>{lunchMenuItem.description}</h2>
+                    <h2>$ {lunchMenuItem.cost}</h2>
                     <form className='adminMenuBtn' action="" name={lunchMenuItem._id} onSubmit={this.deleteLunchMenuItem}>
                         <button>Delete</button>
                     </form>
@@ -71,12 +72,12 @@ class LunchEdit extends Component {
                             onChange={this.handleChange}></input> 
                     <br></br>
 
-                    <input placeholder="price"
-                            name="price"
+                    <input placeholder="cost"
+                            name="cost"
                             type="number"
                             required
                             min="0"
-                            value={this.state.price}
+                            value={this.state.cost}
                             onChange={this.handleChange}></input> 
                    
 

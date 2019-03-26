@@ -3,7 +3,7 @@ import Navbar from '../Navbar/Navbar'
 import Home from '../Home/Home'
 import Menu from '../Menu/Menu'
 import Catering from '../Catering/Catering'
-// import About from './About/About'
+import Footer from '../Footer/Footer'
 
 const SubApp = ()=>{
     return(
@@ -12,6 +12,7 @@ const SubApp = ()=>{
             <Home/>
             <Menu/>
             <Catering/>
+            <Footer/>
         </div>
     )
 }

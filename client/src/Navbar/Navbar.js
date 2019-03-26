@@ -8,12 +8,12 @@ const Navbar = () => {
         <div className='container'>
         
             <a href='#home' className='navItems'>Home</a>
-            <a href='#containerSubBar2' className='navItems'>Menu</a>
+            <a href='#containerSubBar1' className='navItems'>About</a>
             <Link to='/admin'>
                 <img src='http://www.evasbakeryslc.com/images/logo.jpg'  id='logo' alt='logo'/>
             </Link>
+            <a href='#containerSubBar2' className='navItems'>Menu</a>
             <a href='#catering' className='navItems'>Catering</a>
-            <a href='#containerSubBar1' className='navItems'>About</a>
          
         </div>
     );

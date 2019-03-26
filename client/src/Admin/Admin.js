@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Footer from '../Footer/Footer'
 import './Admin.css'
 
 const Admin = ()=>{
@@ -10,6 +11,7 @@ const Admin = ()=>{
             <div className='meme'>
                 <img src='https://i.imgflip.com/21acb2.jpg' alt='admin meme'/>
             </div>
+            <Footer/>
         </div>
     )
 }

@@ -32,7 +32,8 @@
 .cater{
     background: #7aa9e0;
     border-radius: 10pt;
-    width:300pt
+    width:300pt;
+    margin-bottom: 20px;
 }
 .cater p{
     text-align: center;

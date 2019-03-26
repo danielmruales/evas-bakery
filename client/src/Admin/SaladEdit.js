@@ -8,7 +8,7 @@ class SaladEdit extends Component {
         this.state = {
            title:"",
            description:"",
-           price:"" 
+           cost:"" 
         }
     }
     componentDidMount(){
@@ -34,6 +34,7 @@ class SaladEdit extends Component {
                 <div className='adminItems'>
                     <h1>{saladMenuItem.title}</h1>
                     <h2>{saladMenuItem.description}</h2>
+                    <h2>$ {saladMenuItem.cost}</h2>
                     <form className='adminMenuBtn' action="" name={saladMenuItem._id} onSubmit={this.deleteSaladMenuItem}>
                         <button>Delete</button>
                     </form>
@@ -71,12 +72,12 @@ class SaladEdit extends Component {
                             onChange={this.handleChange}></input> 
                     <br></br>
 
-                    <input placeholder="price"
-                            name="price"
+                    <input placeholder="cost"
+                            name="cost"
                             type="number"
                             required
                             min="0"
-                            value={this.state.price}
+                            value={this.state.cost}
                             onChange={this.handleChange}></input> 
                    
 
