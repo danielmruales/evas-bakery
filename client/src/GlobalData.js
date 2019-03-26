@@ -12,6 +12,8 @@ class GlobalData extends Component {
             saladMenuItems: []
         }
     }
+
+
     postCatering = (newCatering) =>{
         axios.post("/catering", newCatering).then(res => {
             this.setState(prevState =>({
@@ -20,6 +22,34 @@ class GlobalData extends Component {
         })
     }
 
+    postBreakfastMenu = (newBreakfast)=>{
+        axios.post(`/breakfastmenu`,newBreakfast).then(res =>{
+            this.setState(prevState => ({
+                breakfastMenuItems: [...prevState.breakfastMenuItems, newBreakfast] 
+            }))
+        })
+       
+    }
+
+
+    postSaladMenu = (newSalad)=>{
+        axios.post(`/saladmenu`,newSalad).then(res =>{
+            this.setState(prevState => ({
+                saladMenuItems: [...prevState.saladMenuItems, newSalad] 
+            }))
+        })
+       
+    }
+
+
+    postLunchMenu = (newLunch)=>{
+        axios.post(`/lunchmenu`,newLunch).then(res =>{
+            this.setState(prevState => ({
+                lunchMenuItems: [...prevState.lunchMenuItems, newLunch] 
+            }))
+        })
+       
+    }
   
 
     getBreakfastMenu = () => {
@@ -49,6 +79,9 @@ class GlobalData extends Component {
                         getBreakfastMenu: this.getBreakfastMenu,
                         getLunchMenu: this.getLunchMenu,
                         getSaladMenu: this.getSaladMenu,
+                        postBreakfastMenu: this.postBreakfastMenu,
+                        postLunchMenu: this.postLunchMenu,
+                        postSaladMenu: this.postSaladMenu,
                         ...this.state
                         }}>
                 {this.props.children}
