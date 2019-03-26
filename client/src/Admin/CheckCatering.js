@@ -37,6 +37,20 @@ class Catering extends Component{
                             <button>Delete</button>
                         </form>
                     </div>)
+            } else {return(
+                <div key={item._id} className="cater" onSubmit={this.delete}>
+                    <h1 className='titleCatering'> Catering Request:</h1>
+                        <p>Name: {item.fullName}</p>
+                        <p>Email: {item.email}</p>
+                        <p>Day of pickup: {item.dayOfEvent}</p>
+                        <p>Time of pickup: {item.timeOfPickup}</p>
+                        <p>Number of people: {item.numOfAttend}</p>
+                        <p>Desired menu: {item.desiredMenu}</p>
+                        <p>Phone Number: {item.phoneNum}</p>
+                        <form action="" name={item._id} className='delteBtn'>
+                            <button>Delete</button>
+                        </form>
+                </div>)
             }
         
         })
