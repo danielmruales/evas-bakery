@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from "axios"
+import { userInfo } from 'os';
 const {Provider,Consumer} = React.createContext()
 
 class GlobalData extends Component {
@@ -12,6 +13,20 @@ class GlobalData extends Component {
             saladMenuItems: []
         }
     }
+
+
+    signup = userInfo => {
+        return axios.post('/auth/signup', userInfo).then(res => {
+            const {user, token} = res.data
+            this.setState({
+                user, token
+            })
+            console.log(this.state)
+            return res
+        })
+
+    }
+
 
 
     postCatering = (newCatering) =>{
@@ -82,6 +97,7 @@ class GlobalData extends Component {
                         postBreakfastMenu: this.postBreakfastMenu,
                         postLunchMenu: this.postLunchMenu,
                         postSaladMenu: this.postSaladMenu,
+                        signup: this.signup,
                         ...this.state
                         }}>
                 {this.props.children}

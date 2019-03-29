@@ -6,9 +6,9 @@ import GlobalData from "./GlobalData"
 
 
 ReactDOM.render(<GlobalData>
-                 <BrowserRouter>
-                    <App />
-                </BrowserRouter>   
+                    <BrowserRouter>
+                        <App />
+                    </BrowserRouter>   
                 </GlobalData> ,document.getElementById('root'));
 
 
