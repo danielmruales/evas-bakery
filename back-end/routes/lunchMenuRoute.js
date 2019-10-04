@@ -22,7 +22,7 @@ lunchMenuRoute.route('/:id')
     .get((req, res)=>{
         const {id} = req.params
         lunchMenu.findById(id,(err, found)=>{
-            err ? res.status(500).send(err) : res.status(500).send(found)
+            err ? res.status(500).send(err) : res.status(200).send(found)
         })
     })
 
