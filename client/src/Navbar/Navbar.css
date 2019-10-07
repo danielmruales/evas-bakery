@@ -1,19 +1,20 @@
 .container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: whitesmoke;
     position: fixed;
-    width: 100%
+    width: 100%;
+    height: 5em;
   }
   
   #logo {
-    height: 120px;
-    /* border-radius:  */
+    height: 5em;
+    border-radius: 10%
   }
   
   .navItems {
-    margin-top: 40px;
-    font-size: 25px;
+    margin-top: 1em;
+    font-size: 1.5em;
     text-decoration: none;
     color: black;
   }

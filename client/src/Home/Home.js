@@ -8,7 +8,7 @@ class Home extends Component {
     render() {
         return (
             <div id="home">
-                <img src="http://evasbakeryslc.com/images/slide1.jpg" className="logo" alt=""/>
+                {/* <img src="http://evasbakeryslc.com/images/slide1.jpg" className="logo" alt=""/> */}
                 <SubBar1 />
                 <Content />
                 <SubBar2 />
