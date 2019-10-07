@@ -1,7 +1,7 @@
 .container{
     display: flex;
     justify-content: space-around;
-    background-color: #FEFFEE;
+    background-color: whitesmoke;
     position: fixed;
     width: 100%
   }
